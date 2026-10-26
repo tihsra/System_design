@@ -16,7 +16,8 @@ public class Client {
 // The implementation is overall correct but the way i am exposing vector is incorrect
 // Fly weight by definition has to hold immutable state 
 // We must therefore call constructor with the vector instance given to the constructor
+// so that fly weigth could create an copy of the list,
 // So that fly weight could be created once
 
 // Apparently fly weight should also have a method which takes in extrinsic state as input
-// to show it's just not a cached object my notes in the code
+// to show it's just not a cached object \
