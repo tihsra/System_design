@@ -12,3 +12,11 @@ public class Client {
 		System.out.println(bush1.getRefereence()+" "+bush2.getRefereence());
 	}
 }
+
+// The implementation is overall correct but the way i am exposing vector is incorrect
+// Fly weight by definition has to hold immutable state 
+// We must therefore call constructor with the vector instance given to the constructor
+// So that fly weight could be created once
+
+// Apparently fly weight should also have a method which takes in extrinsic state as input
+// to show it's just not a cached object my notes in the code
